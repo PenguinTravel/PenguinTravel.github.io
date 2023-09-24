@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benguin</title>
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="./css/all.min.css">
-   <link rel="stylesheet" href="./css/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benguin</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,58 +16,84 @@
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-    <!-- Start header -->
-    <header>
-        <div class="header-top">
-          <div class="container">
-            <div class="links">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">The Company</a></li>
-                <li><a href="#">Our Team </a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Pay Online</a></li>
-                <li><a href="#">Site Map </a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Travel Stories</a></li>
-              </ul>
-            </div>
-            <span>Log in</span>
-          </div>
-       </div>
-       <span class="hr"></span>
-       <div class="header-bottom">
-          <div class="container">
-            <div class="imgs">
-              <img src="./imgs/logo2.png" alt="">
-            </div>
-            <div class="links">
-              <ul>
-                <li><a href="#">ACTIVITIES</a></li>
-                <li><a href="#">DESTINATIONS</a></li>
-                <li><a href="#">GUARANTEED DEPARTURES</a></li>
-                <li><a href="#">SPECIAL OFFERS</a></li>
-                <li><a href="#">BLOG</a></li>
-              </ul>
-              <i class="search fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-       </div>
-    </header>
-     <!-- End header -->
-     <!-- Start Landing -->
-     <div class="landing">
+  <!-- Start header -->
+  <header>
+    <div class="header-top">
       <div class="container">
-        <div class="text">
-          <h1>Guaranteed Departures - Fall 2023</h1>
-          <p>This fall join one of our exciting adventures taking you to the remote corners of Africa, the undiscovered jewels of Central America and our favourite off-the-beaten-path destinations in the Middle East.</p>
-          <a href="#">Read more</a>
+        <div class="links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">The Company</a></li>
+            <li><a href="#">Our Team </a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Pay Online</a></li>
+            <li><a href="#">Site Map </a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Travel Stories</a></li>
+          </ul>
         </div>
-        <div class="text-footer">
-          
+        <span>Log in</span>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./imgs/logo2.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main"
+        aria-controls="main"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">ACTIVITIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">DESTINATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">GUARANTEED DEPARTURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">SPECIAL OFFERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">BLOG</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-     </div>
-     <!-- End Landing -->
+    </div>
+  </nav>  
+  <!-- End header -->
+  <!-- Start Landing -->
+  <div class="landing">
+    <div class="container">
+      <div class="text">
+        <h1>Guaranteed Departures - Fall 2023</h1>
+        <p>This fall join one of our exciting adventures taking you to the remote corners of Africa, the undiscovered jewels of Central America and our favourite off-the-beaten-path destinations in the Middle East.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Landing -->
+  <!-- Start Travel -->
+  <div class="travel">
+    
+  </div>
+  <!-- End Travel -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
 </body>
 </html>

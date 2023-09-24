@@ -17,7 +17,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   color: black;
 }
 a{
@@ -68,7 +68,6 @@ header .header-top .container {
   font-size: 14px;
   color: var(--alt-color);
 }
-
 header .header-top .container .links ul {
  display: flex;
  justify-content: space-between;
@@ -103,56 +102,17 @@ header .header-top .container span:hover:last-child::before{
   color: #ddd;
   transition: var(--main-transition);
 }
-header .hr::before{
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  background-color: #ddd;
+.navbar .navbar-brand img{
+  width: 150px;
 }
-.header-bottom .container{
-  display: flex;
-  align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-.header-bottom .container .imgs img{
-  width: 180px;
-  cursor: pointer;
-}
-.header-bottom .container .links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 22px;
-  width: 100%;
-}
-.header-bottom .container .links ul{
-  display: flex;
-  align-items: center;
-}
-.header-bottom .container .links ul li a{
-  padding: 10px;
-  font-size: 16px;
-  color: var(--main-color);
-  font-weight: normal;
+.navbar .navbar-nav li a {
+  color: black;
   border-radius: 10px;
+  padding: 10px 14px !important;
 }
-.header-bottom .container .links ul li a:hover{
-  color: var(--alt-color);
+.navbar .navbar-nav li a:hover {
   background-color: #F68221;
-  transition: var(--main-transition);
-}
-.header-bottom .container .links i{
-  margin-left: auto;
-  cursor: pointer;
-  font-size: 22px;
-}
-.header-bottom .container .links i:hover{
-  color: #777;
-  transition: var(--main-transition);
+  color: var(--alt-color);
 }
 /* End hedaer */
 /* Start landing */
@@ -169,21 +129,27 @@ header .hr::before{
   color: var(--alt-color);
   letter-spacing: 1.5px;
   text-shadow: 0 0 8px rgba(0,0,0,.6);
+  margin-bottom: 12px;
+  font-weight: bold;
 }
 .landing .text p{
   color: var(--alt-color);
-  letter-spacing: 1px;
-  line-height: 1;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
+  line-height: 1.15;
   text-shadow: 0 0 8px rgba(0,0,0,.6);
+  max-width: 85%;
 }
 .landing .text a{
   color: var(--alt-color);
   font-weight: bold;
-  letter-spacing: 1.5px;
   background-color: var(--alt2-color);
   padding: 10px 14px;
   border-radius: 10px;
   font-size: 16px;
+}
+.landing .text a:hover{
+  background-color: #e76e09;
+  border-color: #db6909;
+  transition: var(--main-transition);
 }
 /* End landing */
