@@ -7,7 +7,6 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,46 +35,44 @@
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./imgs/logo2.png" alt="" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#main"
-        aria-controls="main"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="main">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">ACTIVITIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">DESTINATIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">GUARANTEED DEPARTURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">SPECIAL OFFERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3" href="#">BLOG</a>
-          </li>
-        </ul>
-        <div class="search ps-3 pe-3 d-none d-lg-block">
-          <i class="fa-solid fa-magnifying-glass"></i>
+  <div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./imgs/logo2.png" alt="" />
+        </a>
+        <input type="checkbox" id="nav_check" hidden>
+        <label for="nav_check" class="button">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="collapse navbar-collapse" id="main">
+          <a class="navbar-brand" href="#">
+            <img src="./imgs/logo2.png" alt="" />
+          </a>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">ACTIVITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">DESTINATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">GUARANTEED DEPARTURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">SPECIAL OFFERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">BLOG</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>  
+    </nav>  
+  </div>
   <!-- End header -->
   <!-- Start Landing -->
   <div class="landing">
@@ -83,17 +80,44 @@
       <div class="text">
         <h1>Guaranteed Departures - Fall 2023</h1>
         <p>This fall join one of our exciting adventures taking you to the remote corners of Africa, the undiscovered jewels of Central America and our favourite off-the-beaten-path destinations in the Middle East.</p>
-        <a href="#">Read More</a>
+        <a class="btn" href="#">Read More</a>
       </div>
     </div>
   </div>
   <!-- End Landing -->
   <!-- Start Travel -->
   <div class="travel">
-    
+    <div class="container">
+      <div class="text">
+        <h1>Small Group Adventure Travel</h1>
+        <a class="btn" href="#">View all</a>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="img">
+              <img src="./imgs/img-card-1.jpg" alt="">
+              <span>1980 €, 21 Days</span>
+            </div>
+            <div class="text-card">
+              <h2>The 5 Stan-s - Follow in the footsteps of Genghis Khan</h2>
+              <p>Follow in the footsteps of Genghis Khan as you delve into the vast deserts, rolling steppe, fertile...</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./imgs/img-card-2.jpg" alt="">
+              <span>1980 €, 21 Days</span>
+            </div>
+            <div class="text-card">
+              <h2>The 5 Stan-s - Follow in the footsteps of Genghis Khan</h2>
+              <p>Follow in the footsteps of Genghis Khan as you delve into the vast deserts, rolling steppe, fertile...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- End Travel -->
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/all.min.js"></script>
 </body>
 </html>
