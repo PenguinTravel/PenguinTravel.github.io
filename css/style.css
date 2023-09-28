@@ -380,6 +380,11 @@ header .header-top .container span:hover:last-child::before{
   background-color: var(--alt-color);
   border-radius: 10px;
   overflow: hidden;
+  transition: var(--main-transition);
+}
+.travel .row .col .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 100%);
 }
 .travel .row:last-child .col .card {
   max-width: 360px;
