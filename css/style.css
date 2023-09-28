@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 :root{
+  --background-color: #fff;
+  --alt-background-color: #F1F0F0;
   --main-color: black;
   --alt-color: #fff;
   --alt2-color: #F68221;
@@ -136,8 +138,16 @@ header .header-top .container span:hover:last-child::before{
     justify-content: space-between;
   }
 }
+.navbar .navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navbar .navbar-brand img{
-  width: 150px;
+  width: 73px;
+}
+.navbar .navbar-brand img:first-child{
+  margin-right: 23px;
 }
 .navbar .button{
   cursor: pointer;
@@ -159,6 +169,11 @@ header .header-top .container span:hover:last-child::before{
   justify-content: space-between;
   width: 100%;
 }
+@media (min-width: 992px){
+  .navbar .collapse{ 
+    margin-left: 64px;
+  }
+}
 .navbar .collapse .navbar-brand{ 
   display: none;
 }
@@ -167,13 +182,14 @@ header .header-top .container span:hover:last-child::before{
     position: absolute;
     left: -360px;
     top: 0;
-    width: 260px;
+    width: 250px;
     height: 100vh;
     z-index: 999;
     background-color: #fff;
     display: block;
     transition: var(--main-transition);
     box-shadow: 0 0 8px rgba(0,0,0,.6);
+    border-radius: 0 4px 149px 0;
   }
   #nav_check:checked ~ #main {
     left: 0;
@@ -230,11 +246,18 @@ header .header-top .container span:hover:last-child::before{
   background-image: url(../imgs/teaser_114.png);
   background-size: cover;
   width: 100%;
-  height: 67vh;
+  height: 73vh;
+  position: relative;
+  background-color: #F1F0F0;
 }
 @media (max-width: 992px){
   .landing{
     height: 47vh;
+  }
+}
+@media (max-width: 767px){
+  .landing{
+    margin-bottom: 118px;
   }
 }
 @media (max-width: 577px){
@@ -267,10 +290,36 @@ header .header-top .container span:hover:last-child::before{
     display: none;
   }
 }
+.landing .teaser{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+.landing .teaser img{
+ display: block;
+ margin-left: auto;
+ max-width: 100%;
+ cursor: pointer;
+}
+@media (max-width: 767px){
+  .landing .teaser{
+    bottom: -106px;
+    background-color: transparent;
+  }
+  .landing .teaser img{
+    background: var(--alt2-color);
+    margin: auto;
+    padding: 5px 2px;
+    border-radius: 10px;
+   }
+}
 /* End landing */
 /* Start Travel */
 .travel{
-  background-color: #F1F0F0;
+  background-color: var(--alt-background-color);
 }
 .travel .container .text{
   display: flex;
