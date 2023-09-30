@@ -74,6 +74,34 @@ ul{
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
+.about{
+  background-color: var(--alt-background-color);
+}
+.about .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.about h3{
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px){
+  .about .container{
+   text-align: center;
+   display: block;
+  }
+  .about h3{
+    margin-bottom: 30px;
+  }
+  .about a{
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
 /* End Global Rulws */
 /* Start hedaer */
 header .header-top{
@@ -521,26 +549,6 @@ header .header-top .container span:hover:last-child::before{
   color: #c35d08;
   text-decoration: underline;
 }
-.subescribe .about{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-.subescribe .about h3{
-  font-weight: 400;
-  font-size: 34px;
-  margin-bottom: 10px;
-}
-@media (max-width: 767px){
-  .subescribe .about{
-   text-align: center;
-  }
-  .subescribe .about a{
-    margin: 0 auto;
-  }
-}
 /* End Subscribe*/
 /* Statrt News */
 .news .row{
@@ -550,6 +558,7 @@ header .header-top .container span:hover:last-child::before{
 }
 .news .col{
   max-width: 380px;
+  margin-bottom: auto;
 }
 @media (max-width:992px){
   .news .row{
@@ -564,6 +573,7 @@ header .header-top .container span:hover:last-child::before{
   border-bottom: none;
   border-top: none;
   padding: 36px 22px;
+  height: 100%;
 }
 .news .row .col .card small{
   color: var(--color-777);
@@ -577,6 +587,12 @@ header .header-top .container span:hover:last-child::before{
   letter-spacing: 1.5px;
   font-size: 14px;
   font-weight: normal;
+}
+.news .row .col .card span{
+  display: block;
+}
+.news .row .col .card .star{
+  color: var(--alt2-color);
 }
 @media (max-width:992px){
   .news .row .col.hidden{
