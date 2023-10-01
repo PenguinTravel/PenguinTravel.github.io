@@ -13,8 +13,8 @@
   --alt2-color: #F68221;
   --color-777: #777;
   --main-transition: 0.3s;
-  --main-padding-top: 100px;
-  --main-padding-bottom: 100px;
+  --main-padding-top: 40px;
+  --main-padding-bottom: 40px;
 }
 html{
   scroll-behavior: smooth;
@@ -600,3 +600,49 @@ header .header-top .container span:hover:last-child::before{
   }
 }
 /* End News */
+/* Start Card */
+.visa {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--alt-background-color);
+}
+.visa .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 992px){
+  .visa .container{
+    display: block;
+  }
+}
+.visa .container div{
+  margin-bottom: auto;
+}
+.visa .imgs img{
+  display: block;
+  margin-bottom: 30px;
+}
+@media (max-width: 992px){
+  .visa .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+.visa .links h3{
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+.visa .links a{
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-777);
+}
+.visa .links a:hover{
+  color: var(--alt2-color);
+  text-decoration: underline;
+}
+/* End Card */
