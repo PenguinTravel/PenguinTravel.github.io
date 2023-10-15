@@ -1,0 +1,87 @@
+:root{
+    --background-color: #fff;
+    --alt-background-color: #F1F0F0;
+    --main-color: black;
+    --alt-color: #fff;
+    --alt2-color: #F68221;
+    --color-777: #777;
+    --main-transition: 0.3s;
+    --main-padding-top: 40px;
+    --main-padding-bottom: 40px;
+  }
+/* Start img-home */
+.img-home{
+    background-image: url(../imgs/Screenshot\ 2023-10-11\ 193003.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+    color: var(--alt-color);
+}
+.img-home::before{
+    content: "";
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.20);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.img-home .container{
+    display: flex;
+    text-align: center;
+}
+.img-home .container h3{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    font-size: 26px;
+}
+/* End img-home */
+/* Start Hajj */
+.hajj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hajj .box{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+.hajj .box .card{
+    width: 360px;
+    background: var(--alt-color);
+    border: 1px solid var(--alt2-color);
+    border-radius: 8px;
+}
+.hajj .box .card img{
+    max-width: 100%;
+    height: 100%;
+}
+.hajj .box .card .text{
+    padding: 10px;
+}
+.hajj .box .card .text span{
+    color: var(--alt2-color);
+    font-weight: bold;
+}
+.hajj .box .card h3{
+    padding: 10px 0;
+}
+.hajj .box .card p{
+    padding:0;
+    margin: 0;
+}
+.hajj .box .card .p-text{
+   display: flex;
+}
+.hajj .box .card .p-text p{
+    padding-left: 4px;
+}
+/* End Hajj */
